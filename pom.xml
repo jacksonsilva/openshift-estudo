@@ -54,6 +54,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 
+	<!-- 
 	<modules>
 		<module>commons</module>
 		<module>basics</module>
@@ -63,6 +64,7 @@
 		<module>simplified</module>
 		<module>spring-hateoas-and-spring-data-rest</module>
 	</modules>
+	 -->
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
