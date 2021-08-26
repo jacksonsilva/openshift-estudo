@@ -1,5 +1,6 @@
 package payroll;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import org.springframework.web.bind.annotation.DeleteMapping;
@@ -19,6 +20,31 @@ class EmployeeController {
     this.repository = repository;
   }
 
+//Aggregate root
+ // tag::get-aggregate-root[]
+ @GetMapping("/employees-mock")
+ List<Employee> mock() {
+  
+	 Employee e1 = new Employee();
+	 e1.setId(333l);
+	 e1.setName("Jackson");
+	 e1.setRole("Role");
+	 
+	 Employee e2 = new Employee();
+	 e2.setId(334l);
+	 e2.setName("William");
+	 e2.setRole("Sem Role");
+	 
+	 
+	 List<Employee> ret = new ArrayList<>();
+	 ret.add(e1);
+	 ret.add(e2);
+	 
+	 return ret;
+	 
+	 
+ }
+ // end::get-aggregate-root[]
 
   // Aggregate root
   // tag::get-aggregate-root[]
