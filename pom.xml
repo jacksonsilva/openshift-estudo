@@ -4,7 +4,7 @@
 	<groupId>br.com.jackson</groupId>
 	<artifactId>service-openshift</artifactId>
 	<version>1.0.0.BUILD-SNAPSHOT</version>
-	<packaging>war</packaging>
+	<packaging>jar</packaging>
 
 	<name>Spring HATEOAS - Examples</name>
 	<description>Examples using Spring HATEOAS to build RESTful services</description>
